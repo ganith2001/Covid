@@ -1,0 +1,71 @@
+<div>
+ 
+<mat-card class="example-card" >
+    <mat-card-header >
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title class="title">Covid Updates</mat-card-title>
+     
+    </mat-card-header>
+    
+    <mat-grid-list  cols="2" rowHeight="2:1">
+      <mat-grid-tile class="hov">
+        <mat-card class="covid">
+          <mat-card-header >
+            <mat-card-title class="p1">Active</mat-card-title>
+            <h1 style="color: red;">391516</h1>
+          </mat-card-header>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="covid">
+            <mat-card-header >
+              <mat-card-title class="p1" >Recovered</mat-card-title>
+              <h1 style="color: green;">2905604</h1>
+            </mat-card-header>
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card class="covid">
+              <mat-card-header >
+                <mat-card-title class="p1" >Deceased</mat-card-title>
+                <h1>37472</h1>
+              </mat-card-header>
+              </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-card class="covid">
+                <mat-card-header >
+                  <mat-card-title class="p1" >Confirmed</mat-card-title>
+                  <h1 style="color: red;">2960131</h1>
+                </mat-card-header>
+                </mat-card>
+              </mat-grid-tile>
+      </mat-grid-list>
+      
+  </mat-card>
+  
+  <mat-card class="example-card2" >
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image2"></div>
+      <mat-card-title class="title" >Vaccination</mat-card-title>
+    
+    </mat-card-header>
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      >
+      <mat-card class="covid">
+        <mat-card-header >
+          <mat-card-title class="p1" >{{tile.title}}</mat-card-title>
+          <h1 class="p1" style="color: black;">{{tile.count}}</h1>
+        </mat-card-header>
+        </mat-card>
+  </mat-grid-tile>
+     
+      </mat-grid-list>
+    
+  </mat-card>
+
+</div>

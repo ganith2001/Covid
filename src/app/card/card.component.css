@@ -1,0 +1,35 @@
+.example-card {
+    width: 45%;
+    float: left;
+    border-color: white;
+   
+  }
+  .example-card2 {
+    width: 45%;
+    float: right;
+   
+  }
+  .example-header-image {
+    background-image: url('../../assets/images/graph4.jpg');
+    background-size: cover;
+
+  }
+  .example-header-image2 {
+    background-image: url('../../assets/images/inject.jpg');
+    background-size: cover;
+
+  }
+  .title{
+    font-size: 150%;
+    color: white;
+  }
+
+  .covid{
+    max-width: 100%;
+    max-height: 50px;
+    background-image: linear-gradient(black,white);
+  }
+.p1{
+  color: rgb(255, 255, 255);
+}
+  
